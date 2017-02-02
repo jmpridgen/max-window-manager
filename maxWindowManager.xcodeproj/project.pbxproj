@@ -1,0 +1,293 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		50FFC5E81D84E80500293922 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FFC5E71D84E80500293922 /* AppDelegate.m */; };
+		50FFC5EB1D84E80500293922 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FFC5EA1D84E80500293922 /* main.m */; };
+		50FFC5ED1D84E80500293922 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50FFC5EC1D84E80500293922 /* Assets.xcassets */; };
+		50FFC5F01D84E80500293922 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50FFC5EE1D84E80500293922 /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		50FFC5E31D84E80500293922 /* maxWindowManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = maxWindowManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		50FFC5E61D84E80500293922 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		50FFC5E71D84E80500293922 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		50FFC5EA1D84E80500293922 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		50FFC5EC1D84E80500293922 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		50FFC5EF1D84E80500293922 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		50FFC5F11D84E80500293922 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		50FFC5E01D84E80500293922 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		50FFC5DA1D84E80500293922 = {
+			isa = PBXGroup;
+			children = (
+				50FFC5E51D84E80500293922 /* windowManagerAppNoStory */,
+				50FFC5E41D84E80500293922 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		50FFC5E41D84E80500293922 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				50FFC5E31D84E80500293922 /* maxWindowManager.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		50FFC5E51D84E80500293922 /* windowManagerAppNoStory */ = {
+			isa = PBXGroup;
+			children = (
+				50FFC5E61D84E80500293922 /* AppDelegate.h */,
+				50FFC5E71D84E80500293922 /* AppDelegate.m */,
+				50FFC5EC1D84E80500293922 /* Assets.xcassets */,
+				50FFC5EE1D84E80500293922 /* MainMenu.xib */,
+				50FFC5F11D84E80500293922 /* Info.plist */,
+				50FFC5E91D84E80500293922 /* Supporting Files */,
+			);
+			path = windowManagerAppNoStory;
+			sourceTree = "<group>";
+		};
+		50FFC5E91D84E80500293922 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				50FFC5EA1D84E80500293922 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		50FFC5E21D84E80500293922 /* maxWindowManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50FFC5F41D84E80500293922 /* Build configuration list for PBXNativeTarget "maxWindowManager" */;
+			buildPhases = (
+				50FFC5DF1D84E80500293922 /* Sources */,
+				50FFC5E01D84E80500293922 /* Frameworks */,
+				50FFC5E11D84E80500293922 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = maxWindowManager;
+			productName = windowManagerAppNoStory;
+			productReference = 50FFC5E31D84E80500293922 /* maxWindowManager.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		50FFC5DB1D84E80500293922 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "James M. Pridgen";
+				TargetAttributes = {
+					50FFC5E21D84E80500293922 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 50FFC5DE1D84E80500293922 /* Build configuration list for PBXProject "maxWindowManager" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 50FFC5DA1D84E80500293922;
+			productRefGroup = 50FFC5E41D84E80500293922 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				50FFC5E21D84E80500293922 /* maxWindowManager */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		50FFC5E11D84E80500293922 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50FFC5ED1D84E80500293922 /* Assets.xcassets in Resources */,
+				50FFC5F01D84E80500293922 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		50FFC5DF1D84E80500293922 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50FFC5EB1D84E80500293922 /* main.m in Sources */,
+				50FFC5E81D84E80500293922 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		50FFC5EE1D84E80500293922 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50FFC5EF1D84E80500293922 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		50FFC5F21D84E80500293922 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		50FFC5F31D84E80500293922 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		50FFC5F51D84E80500293922 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = windowManagerAppNoStory/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Pridgen.maxWindowManager;
+				PRODUCT_NAME = maxWindowManager;
+			};
+			name = Debug;
+		};
+		50FFC5F61D84E80500293922 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = windowManagerAppNoStory/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Pridgen.maxWindowManager;
+				PRODUCT_NAME = maxWindowManager;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		50FFC5DE1D84E80500293922 /* Build configuration list for PBXProject "maxWindowManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50FFC5F21D84E80500293922 /* Debug */,
+				50FFC5F31D84E80500293922 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50FFC5F41D84E80500293922 /* Build configuration list for PBXNativeTarget "maxWindowManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50FFC5F51D84E80500293922 /* Debug */,
+				50FFC5F61D84E80500293922 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 50FFC5DB1D84E80500293922 /* Project object */;
+}
