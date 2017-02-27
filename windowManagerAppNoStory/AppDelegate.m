@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "AppKit/AppKit.h"
+#import <objc/runtime.h>
 
 @interface AppDelegate ()
 
@@ -57,6 +58,7 @@
 -(void)fullScreen{
     NSScreen *myScreen = [NSScreen mainScreen];
     CGRect myScreenSize = [myScreen frame];
+    myScreenSize = [self convertRect:myScreenSize];
     [self positionWindow:myScreenSize];
 }
 
@@ -65,6 +67,7 @@
     CGRect myScreenSize = [myScreen frame];
     CGRect desiredSize = myScreenSize;
     desiredSize.size.width = desiredSize.size.width/2;
+    desiredSize = [self convertRect:desiredSize];
     [self positionWindow:desiredSize];
 }
 
@@ -73,8 +76,24 @@
     CGRect myScreenSize = [myScreen frame];
     CGRect desiredSize = myScreenSize;
     desiredSize.size.width = desiredSize.size.width/2;
-    desiredSize.origin.x=desiredSize.size.width;
+    desiredSize.origin.x=myScreenSize.origin.x+desiredSize.size.width;
+    desiredSize = [self convertRect:desiredSize];
     [self positionWindow:desiredSize];
+}
+
+-(CGRect)convertRect:(CGRect) oldRect{
+    NSArray *myScreens = [NSScreen screens];
+    NSScreen *primaryScreen;
+    for (NSScreen *screen in myScreens) {
+        CGFloat screenX = screen.frame.origin.x;
+        CGFloat screenY = screen.frame.origin.y;
+        if (screenX == 0 && screenY == 0){
+            primaryScreen = screen;
+            oldRect.origin.y = -oldRect.origin.y + primaryScreen.frame.size.height - oldRect.size.height;
+            break;
+        }
+    }
+    return oldRect;
 }
 
 -(void)quitMe{
@@ -88,7 +107,7 @@
         if ([myApp isActive])
         {
             AXUIElementRef myAppRef = AXUIElementCreateApplication([myApp processIdentifier]);
-            NSLog(@"something to print");
+            //NSLog(@"something to print");
             CFArrayRef windowList;
             AXUIElementCopyAttributeValues(myAppRef, kAXWindowsAttribute, 0, 99999, &windowList);
             if (!windowList || CFArrayGetCount(windowList)<0) continue;
